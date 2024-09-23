@@ -15,7 +15,7 @@ It follows the standard cron format, consisting of five time fields: minute, hou
 
 ## Instructions to run the program
 ```
-java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"
+java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3/4 /usr/bin/find"
 ```
 
 The output is formatted as a table with the field name taking the first 14 columns and
@@ -23,7 +23,7 @@ the times as a space-separated list following it.
 
 For example, the following input argument:
 
-```java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"```
+```java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3/4 /usr/bin/find"```
 
 Yields the following output:
 
