@@ -4,7 +4,7 @@ This command-line application parses a cron expression and expands each field to
 
 It follows the standard cron format, consisting of five time fields: minute, hour, day of the month, month, and day of the week, followed by the command to be executed. The cron expression should be provided as a single argument to the application.
 
-```~$ your-program "*/15 0 1,15 * 1-5 /usr/bin/find"```
+```"*/15 0 1,15 * 1-5 /usr/bin/find"```
 
 
 
@@ -15,7 +15,7 @@ It follows the standard cron format, consisting of five time fields: minute, hou
 
 ## Instructions to run the program
 ```
-java -jar cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"
+java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"
 ```
 
 The output is formatted as a table with the field name taking the first 14 columns and
@@ -23,7 +23,7 @@ the times as a space-separated list following it.
 
 For example, the following input argument:
 
-```java -jar cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"```
+```java -jar out/artifacts/cron_expression_parser_jar/cron-expression-parser.jar "*/3 0,7 1,6 3-5 3-4/4 /usr/bin/find"```
 
 Yields the following output:
 
