@@ -11,7 +11,6 @@ It follows the standard cron format, consisting of five time fields: minute, hou
 ## Limitations
 - This does not handle the special time strings such as "@yearly"
 - This does not handle if the month has less than 31 days or not
-- Test coverage is not complete
 
 ## Instructions to run the program
 ```
@@ -38,5 +37,5 @@ command       /usr/bin/find
 ```
 
 ## Tests
+The `test/` directory contains individual parser test cases as well as integration test cases. These tests cover basic parsing functionality and validate the conversion of cron expressions into the expected output. 
 
-The tests are not exhaustive but are present in the `test/` directory. They do cover basic cases of Parsers and over tests of an expression to the required output.
