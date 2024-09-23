@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="cron-expression-parser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/cron_expression_parser_jar</output-path>
+    <root id="archive" name="cron-expression-parser.jar">
+      <element id="module-output" name="cron-expressions-parser" />
+    </root>
+  </artifact>
+</component>
